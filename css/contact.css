@@ -1,0 +1,113 @@
+.contact-banner-bg {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  background: url(../images/contact-page-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.contact-us {
+  border-bottom: 3px dotted #cfcfcf;
+  padding: 100px 0px;
+  background: #f3f2ec;
+}
+
+.contact-us .section-heading {
+  margin-bottom: 40px;
+}
+
+.contact-us #map {
+  margin-right: 30px;
+}
+
+.contact-us form input {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  padding: 0px 15px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  color: #aaa;
+  border-radius: 10px;
+  border: 1px solid #7a7a7a;
+  box-shadow: none;
+  font-style: normal;
+}
+
+.contact-us form input::focus {
+  border-color: #2a2a2a;
+  border-radius: 0px;
+}
+
+.contact-us form textarea {
+  width: 100%;
+  height: 140px;
+  min-height: 120px;
+  max-height: 200px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  line-height: 44px;
+  padding: 0px 15px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  color: #aaa;
+  border-radius: 10px;
+  border: 1px solid #7a7a7a;
+  box-shadow: none;
+  font-style: normal;
+}
+
+.contact-us form textarea::focus {
+  border-color: #2a2a2a;
+  border-radius: 0px;
+}
+
+.contact-us form button {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  line-height: 44px;
+  background-color: #2a2a2a;
+  box-shadow: none;
+  border: 1px solid transparent;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.contact-us form button:hover {
+  background-color: #fff;
+  border: 1px solid #2a2a2a;
+  color: #2a2a2a;
+}
+@media (max-width: 992px) {
+  .contact-us #map {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .contact-us form input {
+    margin-bottom: 15px;
+  }
+  .contact-us form textarea {
+    margin-top: 0px;
+  }
+  .contact-us{
+    padding: 50px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .set-bg {
+    height: 200px;
+  }
+  .set-bg h2 {
+    font-size: 40px;
+  }
+}

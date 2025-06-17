@@ -1,0 +1,154 @@
+#thank-sec {
+  padding: 70px 15px;
+  background: #edebe4;
+  background-color: rgb(136 73 32 / 50%);
+  background: linear-gradient(rgb(243 242 236 / 80%), rgb(237 235 228 / 80%)),
+    url(../images/thank-bg-new.jpg);
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+#thank-sec .container {
+  background: #edebe4;
+  padding: 50px;
+  border-radius: 30px;
+  border: 1px dashed #333;
+}
+
+/* Loader styles */
+.loader-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #f3f2ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loader-screen img {
+  width: 100px;
+}
+
+.loader-screen p {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #d7b56d;
+  border-top: 6px solid #884920;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card-left {
+  background-color: #f3f2ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 30px;
+  box-shadow: 0px 5px 20px 5px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  height: 500px;
+  background: url(../images/thank-you-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+.card-left .message {
+  background-color: rgba(255, 255, 255);
+  padding: 30px 15px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card-left .message p {
+  font-size: 25px;
+  line-height: 170%;
+  font-family: "Prata", serif;
+  text-transform: capitalize;
+}
+
+.card-right {
+  padding: 40px 30px;
+  text-align: center;
+  background-color: #f3f2ec;
+  color: #222;
+  box-shadow: 0px 5px 20px 5px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgb(243 242 236 / 50%), rgb(237 235 228 / 50%)),
+    url(../images/book-pages.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-right h1 {
+  text-transform: capitalize;
+  color: #333;
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.card-right h2 {
+  font-family: "Cursive", sans-serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #dab46f;
+}
+
+.card-right p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.card-right p strong {
+  color: #dab46f;
+}
+
+@media screen and (max-width: 991px) {
+  .card-left {
+    padding: 30px 30px;
+  }
+  .card-left .message {
+    padding: 15px 15px;
+  }
+  .card-left .message p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .card-left {
+    margin-bottom: 15px;
+  }
+  #thank-sec .container {
+    padding: 15px;
+  }
+  .card-left, .card-right {
+    height: auto;
+  }
+  .card-right p{font-size: 15px;}
+}
