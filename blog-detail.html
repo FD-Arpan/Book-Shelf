@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book-Shelf :: Blog-details</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/header-footer.css" />
+    <link rel="stylesheet" href="css/lander.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header-1">
+        <div class="container">
+          <label for="menu-btn" class="btn menu-btn"
+            ><i class="fa fa-bars"></i
+          ></label>
+          <a href="lander.html" class="logo"
+            ><img src="images/book-shelf-logo.png" alt
+          /></a>
+
+          <form action class="search-form">
+            <input
+              type="search"
+              name
+              placeholder="search here..."
+              id="search-box"
+            />
+            <label for="search-box" class="fa fa-search"></label>
+          </form>
+
+          <div class="icons">
+            <div id="search-btn" class="fa fa-search"></div>
+            <div class="user-icon">
+              <a id="login-btn" class="fa fa-heart"></a>
+            </div>
+            <div class="cart-icon">
+              <a type="button" class="fa fa-shopping-bag"></a>
+              <span class="cart-count">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-2">
+        <nav>
+          <div class="container-fluid">
+            <div class="wrapper">
+              <input type="radio" name="slider" id="menu-btn" />
+              <input type="radio" name="slider" id="close-btn" />
+              <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"
+                  ><i class="fa fa-times"></i
+                ></label>
+                <li>
+                  <a href="lander.html">Home</a>
+                </li>
+                <li>
+                  <a href="shop.html">Shop</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- header section ends -->
+
+      <!-- Cart Panel -->
+      <div class="cart-panel">
+        <div class="cart-header">
+          <h2>Your Cart</h2>
+          <button class="close-cart">✖</button>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-footer">
+          <div class="total">Total: $<span class="total-price">0.00</span></div>
+          <a href="cart.html" class="view-cart-btn">View Cart</a>
+        </div>
+      </div>
+
+      <!-- login form  -->
+
+      <div class="login-form-container">
+        <div id="close-login-btn" class="fa fa-times"></div>
+
+        <form action>
+          <h3>sign in</h3>
+          <span>username</span>
+          <input
+            type="email"
+            name
+            class="box"
+            placeholder="enter your email"
+            id
+          />
+          <span>password</span>
+          <input
+            type="password"
+            name
+            class="box"
+            placeholder="enter your password"
+            id
+          />
+          <div class="checkbox">
+            <input type="checkbox" name id="remember-me" />
+            <label for="remember-me"> remember me</label>
+          </div>
+          <input type="submit" value="sign in" class="btn" />
+          <p>forget password ? <a href="#">click here</a></p>
+          <p>don't have an account ? <a href="#">create one</a></p>
+        </form>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <section class="blog-hero spad">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-9 text-center">
+              <div class="blog__hero__text">
+                <h2>
+                  The Magic of Reading — Why Books Still Matter in the Digital
+                  Age
+                </h2>
+                <ul>
+                  <li>By Deercreative</li>
+                  <li>March 21, 2025</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-details spad">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-12">
+              <div class="blog__details__pic">
+                <img src="images/post-img1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <div class="blog__details__content">
+                <div class="blog__details__text">
+                  <p>
+                    In today’s fast-paced digital world, we are constantly
+                    bombarded with an avalanche of information. Whether through
+                    smartphones, social media, news feeds, or streaming
+                    platforms, most of our waking hours are spent staring at
+                    screens. In such an environment, it’s easy to dismiss books
+                    as outdated or irrelevant. But the truth is, reading books
+                    remains one of the most enriching and transformative
+                    experiences we can have — and perhaps now, more than ever,
+                    it is vital to rediscover the magic of reading.
+                  </p>
+                  <h5>Books Offer Depth in an Age of Distraction</h5>
+                  <p>
+                    One of the greatest advantages of reading books is their
+                    ability to offer depth. Unlike a short tweet or a two-minute
+                    video, books provide the space for authors to delve into
+                    nuanced arguments, complex characters, and intricate plots.
+                    This depth cultivates patience, critical thinking, and the
+                    ability to focus — qualities that are diminishing in the
+                    digital age.
+                  </p>
+                  <p>
+                    When you read a book, you are not skimming through headlines
+                    or swiping away distractions. You are entering a world where
+                    your mind is fully engaged, and your imagination is
+                    activated. This deep engagement is increasingly rare but
+                    profoundly rewarding.
+                  </p>
+                  <h5>Empathy and Emotional Intelligence</h5>
+                  <p>
+                    One powerful and often overlooked benefit of reading is its
+                    ability to foster empathy. When we read fiction, we see the
+                    world through the eyes of characters who may come from
+                    completely different backgrounds. We experience their fears,
+                    joys, dilemmas, and triumphs. Research has shown that people
+                    who read fiction regularly tend to score higher on measures
+                    of empathy and emotional intelligence.
+                  </p>
+                  <p>
+                    In a world divided by politics, culture, and
+                    misunderstanding, developing empathy through literature can
+                    make us better humans. It helps us connect across
+                    differences and appreciate the complexities of the human
+                    experience.
+                  </p>
+                  <h5>The Mental Health Benefits</h5>
+                  <p>
+                    Reading has also been linked to numerous mental health
+                    benefits. According to multiple studies, reading can reduce
+                    stress levels by up to 68%, making it more effective than
+                    listening to music or going for a walk. It can help you fall
+                    asleep faster, improve your mood, and even reduce symptoms
+                    of depression and anxiety. In a society where mental health
+                    issues are on the rise, the simple act of reading can offer
+                    a refuge — a mental escape that soothes and heals. Holding a
+                    book and immersing yourself in a story can provide peace in
+                    a chaotic world.
+                  </p>
+                  <h5>Building a Reading Culture</h5>
+                  <p>
+                    While the digital age poses challenges, it also offers
+                    opportunities. With the rise of eBooks, audiobooks, and
+                    online libraries, books are more accessible than ever. You
+                    can carry an entire library in your pocket and read anywhere
+                    — during your commute, lunch break, or before bed.
+                  </p>
+                  <p>
+                    Building a reading culture in your household or community
+                    can have lasting effects. Children who grow up around books
+                    are more likely to develop strong literacy skills, perform
+                    well academically, and grow into thoughtful adults.
+                  </p>
+                  <h5>Why Books Still Matter</h5>
+                  <p>
+                    Books are not relics of the past — they are tools of
+                    transformation. They help us understand the world and
+                    ourselves. They sharpen our minds, touch our hearts, and
+                    spark our imaginations. They bring people together through
+                    shared stories and ideas.
+                  </p>
+                </div>
+                <div class="blog__details__quote">
+                  <i class="fa fa-quote-left"></i>
+                  <p>
+                    “So, as we navigate this digital era, let’s not lose sight
+                    of the value of reading. Let’s make room for books in our
+                    lives, support bookstores and libraries, and encourage each
+                    other to turn the page — literally.”
+                  </p>
+                  <h6>_ Unknown _</h6>
+                </div>
+
+                <div class="blog__details__option">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div class="blog__details__author">
+                        <div class="blog__details__author__pic">
+                          <img src="images/blog-author.jpg" alt="" />
+                        </div>
+                        <div class="blog__details__author__text">
+                          <h5>Aiden Blair</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div class="blog__details__tags">
+                        <a href="#">#Trending</a>
+                        <a href="#">#2025</a>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog-sec">
+        <div class="container">
+          <div class="blog-head cmn-head">
+            <div class="section-header align-center">
+              <h2 class="section-title">Some Related Articles</h2>
+            </div>
+          </div>
+          <div
+            class="blog-body cmn-body aos-init aos-animate"
+            data-aos="fade-up"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="blog__item">
+                  <div class="blog__item__pic">
+                    <img src="images/post-img1.jpg" alt="" />
+                  </div>
+                  <div class="blog__item__text">
+                    <span
+                      ><img src="img/icon/calendar.png" alt="" /> 16 May
+                      2025</span
+                    >
+                    <h5>Reading books always makes the moments happy</h5>
+                    <a href="blog-detail.html">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="blog__item">
+                  <div class="blog__item__pic">
+                    <img src="images/post-img2.jpg" alt="" />
+                  </div>
+                  <div class="blog__item__text">
+                    <span
+                      ><img src="img/icon/calendar.png" alt="" /> 21 May
+                      2025</span
+                    >
+                    <h5>Reading books always makes the moments happy</h5>
+                    <a href="blog-detail.html">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="blog__item">
+                  <div class="blog__item__pic">
+                    <img src="images/post-img3.jpg" alt="" />
+                  </div>
+                  <div class="blog__item__text">
+                    <span
+                      ><img src="img/icon/calendar.png" alt="" /> 28 May
+                      2025</span
+                    >
+                    <h5>Reading books always makes the moments happy</h5>
+                    <a href="blog-detail.html">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News Letter -->
+      <section id="subscribe">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-element">
+                    <h2 class="section-title divider">
+                      Subscribe to our newsletter
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="subscribe-content" data-aos="fade-up">
+                    <p>
+                      Subscribe to our newsletter for updates on new arrivals, exclusive deals, 
+                      and bookish inspiration delivered straight to your inbox.
+                    </p>
+                    <form id="newsletter-form">
+                      <input
+                        type="email"
+                        name="email_newsletter"
+                        placeholder="Enter your email"
+                      />
+                      <span id="email_newsletter-errorMsg" class="error-msg"></span>
+                      <button class="btn-subscribe" type="button" id="newsletter-form-submit">
+                        <span>send</span>
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                      </button>
+                    </form>
+                    <div id="newsletter_message"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div
+              class="footer_nav_container d-flex flex-sm-row flex-column align-items-center justify-content-lg-start justify-content-center text-center"
+            >
+              <ul class="footer_nav">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center"
+            >
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer_nav_container">
+              <div class="cr">© 2025 All Rights Reserverd.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="loader-container">
+      <img src="images/loader-img.gif" alt="" />
+    </div>
+
+    <!-- JAVA Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

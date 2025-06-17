@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book-Shelf :: Thank-You</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/header-footer.css" />
+    <link rel="stylesheet" href="css/lander.css" />
+    <link rel="stylesheet" href="css/thank.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header-1">
+        <div class="container">
+          <label for="menu-btn" class="btn menu-btn"
+            ><i class="fa fa-bars"></i
+          ></label>
+          <a href="lander.html" class="logo"
+            ><img src="images/book-shelf-logo.png" alt
+          /></a>
+
+          <form action class="search-form">
+            <input
+              type="search"
+              name
+              placeholder="search here..."
+              id="search-box"
+            />
+            <label for="search-box" class="fa fa-search"></label>
+          </form>
+
+          <div class="icons">
+            <div id="search-btn" class="fa fa-search"></div>
+            <div class="user-icon">
+              <a id="login-btn" class="fa fa-heart"></a>
+            </div>
+            <div class="cart-icon">
+              <a type="button" class="fa fa-shopping-bag"></a>
+              <span class="cart-count">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-2">
+        <nav>
+          <div class="container-fluid">
+            <div class="wrapper">
+              <input type="radio" name="slider" id="menu-btn" />
+              <input type="radio" name="slider" id="close-btn" />
+              <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"
+                  ><i class="fa fa-times"></i
+                ></label>
+                <li>
+                  <a href="lander.html">Home</a>
+                </li>
+                <li>
+                  <a href="shop.html">Shop</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- header section ends -->
+
+      <!-- Cart Panel -->
+      <div class="cart-panel">
+        <div class="cart-header">
+          <h2>Your Cart</h2>
+          <button class="close-cart">✖</button>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-footer">
+          <div class="total">Total: $<span class="total-price">0.00</span></div>
+          <a href="cart.html" class="view-cart-btn">View Cart</a>
+        </div>
+      </div>
+
+      <!-- login form  -->
+
+      <div class="login-form-container">
+        <div id="close-login-btn" class="fa fa-times"></div>
+
+        <form action>
+          <h3>sign in</h3>
+          <span>username</span>
+          <input
+            type="email"
+            name
+            class="box"
+            placeholder="enter your email"
+            id
+          />
+          <span>password</span>
+          <input
+            type="password"
+            name
+            class="box"
+            placeholder="enter your password"
+            id
+          />
+          <div class="checkbox">
+            <input type="checkbox" name id="remember-me" />
+            <label for="remember-me"> remember me</label>
+          </div>
+          <input type="submit" value="sign in" class="btn" />
+          <p>forget password ? <a href="#">click here</a></p>
+          <p>don't have an account ? <a href="#">create one</a></p>
+        </form>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- Loader -->
+      <div class="loader-screen" id="loader">
+        <div class="spinner"></div>
+        <p>Processing your order...</p>
+      </div>
+
+      <section id="thank-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="card-left">
+                <div class="message">
+                  <p>
+                    If you have any concerns about your purchase, please give us
+                    the chance to make it right before leaving neutral or
+                    negative feedback.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="card-right">
+                <h1>THANK YOU</h1>
+                <h2>FOR YOUR PURCHASE</h2>
+                <p>
+                  Enjoy 20% off on your next purchase with a<br />
+                  coupon code <strong>THANKYOU20</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div
+              class="footer_nav_container d-flex flex-sm-row flex-column align-items-center justify-content-lg-start justify-content-center text-center"
+            >
+              <ul class="footer_nav">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center"
+            >
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer_nav_container">
+              <div class="cr">© 2025 All Rights Reserverd.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVA Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/custom.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(() => {
+          document.getElementById("loader").style.display = "none";
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>

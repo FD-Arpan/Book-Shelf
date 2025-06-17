@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book-Shelf :: Checkout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/header-footer.css" />
+    <link rel="stylesheet" href="css/lander.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header-1">
+        <div class="container">
+          <label for="menu-btn" class="btn menu-btn"
+            ><i class="fa fa-bars"></i
+          ></label>
+          <a href="lander.html" class="logo"
+            ><img src="images/book-shelf-logo.png" alt
+          /></a>
+
+          <form action class="search-form">
+            <input
+              type="search"
+              name
+              placeholder="search here..."
+              id="search-box"
+            />
+            <label for="search-box" class="fa fa-search"></label>
+          </form>
+
+          <div class="icons">
+            <div id="search-btn" class="fa fa-search"></div>
+            <a id="login-btn" class="fa fa-heart"></a>
+            <a
+              href="file:///C:/OneDriveData/OneDrive/Desktop/Book-joint/cart.html"
+              class="fa fa-shopping-bag"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="header-2">
+        <nav>
+          <div class="container-fluid">
+            <div class="wrapper">
+              <input type="radio" name="slider" id="menu-btn" />
+              <input type="radio" name="slider" id="close-btn" />
+              <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"
+                  ><i class="fa fa-times"></i
+                ></label>
+                <li>
+                  <a href="lander.html">Home</a>
+                </li>
+                <li>
+                  <a href="shop.html">Shop</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- header section ends -->
+
+      <!-- login form  -->
+
+      <div class="login-form-container">
+        <div id="close-login-btn" class="fa fa-times"></div>
+
+        <form action>
+          <h3>sign in</h3>
+          <span>username</span>
+          <input
+            type="email"
+            name
+            class="box"
+            placeholder="enter your email"
+            id
+          />
+          <span>password</span>
+          <input
+            type="password"
+            name
+            class="box"
+            placeholder="enter your password"
+            id
+          />
+          <div class="checkbox">
+            <input type="checkbox" name id="remember-me" />
+            <label for="remember-me"> remember me</label>
+          </div>
+          <input type="submit" value="sign in" class="btn" />
+          <p>forget password ? <a href="#">click here</a></p>
+          <p>don't have an account ? <a href="#">create one</a></p>
+        </form>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- top breadcrumb area -->
+      <section class="breadcrumb-option">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="breadcrumb__text">
+                <h4>Check Out</h4>
+                <div class="breadcrumb__links">
+                  <a href="./index.html">Home</a>
+                  <a href="./shop.html">Shop</a>
+                  <span>Check Out</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- checkout form area-->
+
+      <section class="checkout spad">
+        <div class="container">
+          <div class="checkout__form">
+            <form id="user-details-form">
+              <div class="row">
+                <div class="col-lg-8 col-md-6">
+                  <h6 class="checkout__title">Billing Details</h6>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="checkout__input">
+                        <p>Fist Name<span>*</span></p>
+                        <input type="text" name="first_name" />
+                        <span id="first-errorMsg" class="error-msg"></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="checkout__input">
+                        <p>Last Name<span>*</span></p>
+                        <input type="text" name="last_name" />
+                        <span id="last-errorMsg" class="error-msg"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkout__input">
+                    <p>Country<span>*</span></p>
+                    <input type="text" name="country" />
+                    <span id="country-errorMsg" class="error-msg"></span>
+                  </div>
+                  <div class="checkout__input">
+                    <p>Address<span>*</span></p>
+                    <input
+                      type="text"
+                      placeholder="Street Address"
+                      class="checkout__input__add"
+                      name="address"
+                    />
+                    <span id="address-errorMsg" class="error-msg"></span>
+                  </div>
+                  <div class="checkout__input">
+                    <p>Town/City<span>*</span></p>
+                    <input type="text" name="city" />
+                    <span id="city-errorMsg" class="error-msg"></span>
+                  </div>
+                  <div class="checkout__input">
+                    <p>State<span>*</span></p>
+                    <input type="text" name="state" />
+                    <span id="state-errorMsg" class="error-msg"></span>
+                  </div>
+                  <div class="checkout__input">
+                    <p>Postcode / ZIP<span>*</span></p>
+                    <input type="text" name="zip" />
+                    <span id="zip-errorMsg" class="error-msg"></span>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="checkout__input">
+                        <p>Phone<span>*</span></p>
+                        <input type="text" name="phone" />
+                        <span id="phone-errorMsg" class="error-msg"></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="checkout__input">
+                        <p>Email<span>*</span></p>
+                        <input type="email" name="email" />
+                        <span id="email-errorMsg" class="error-msg"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="checkout__input__checkbox">
+                    <label for="diff-acc">
+                      Note about your order, e.g, special note for delivery
+                      <input type="checkbox" id="diff-acc" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="checkout__input">
+                    <p>Order notes</p>
+                    <input
+                      type="text"
+                      placeholder="Notes about your order, e.g. special notes for delivery."
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="checkout__order">
+                    <h4 class="order__title">Your order</h4>
+                    <div class="checkout__order__products">
+                      Product <span>Total</span>
+                    </div>
+                    <ul
+                      class="checkout__total__products"
+                      id="checkout-cart-items"
+                    ></ul>
+                    <ul class="checkout__total__all">
+                      <li>
+                        <strong>Total:</strong> $<span id="checkout-total"
+                          >0.00</span
+                        >
+                      </li>
+                    </ul>
+                    <div class="checkout__input__checkbox">
+                      <label for="acc-or">
+                        cash on delivery
+                        <input type="checkbox" id="acc-or" disabled checked />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <!-- <div class="checkout__input__checkbox">
+                      <label for="paypal">
+                        Paypal
+                        <input type="checkbox" id="paypal" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div> -->
+                    <button type="button" class="site-btn" id="place-order">
+                      PLACE ORDER
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- News Letter -->
+      <section id="subscribe">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-element">
+                    <h2 class="section-title divider">
+                      Subscribe to our newsletter
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="subscribe-content" data-aos="fade-up">
+                    <p>
+                      Subscribe to our newsletter for updates on new arrivals,
+                      exclusive deals, and bookish inspiration delivered
+                      straight to your inbox.
+                    </p>
+                    <form id="newsletter-form">
+                      <input
+                        type="email"
+                        name="email_newsletter"
+                        placeholder="Enter your email"
+                      />
+                      <span
+                        id="email_newsletter-errorMsg"
+                        class="error-msg"
+                      ></span>
+                      <button
+                        class="btn-subscribe"
+                        type="button"
+                        id="newsletter-form-submit"
+                      >
+                        <span>send</span>
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                      </button>
+                    </form>
+                    <div id="newsletter_message"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div
+              class="footer_nav_container d-flex flex-sm-row flex-column align-items-center justify-content-lg-start justify-content-center text-center"
+            >
+              <ul class="footer_nav">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center"
+            >
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer_nav_container">
+              <div class="cr">© 2025 All Rights Reserverd.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="loader-container">
+      <img src="images/loader-img.gif" alt />
+    </div>
+
+    <!-- JAVA Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/checkout.js"></script>
+  </body>
+</html>
